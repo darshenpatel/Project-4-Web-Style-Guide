@@ -1,0 +1,68 @@
+/* ============================================= */
+/*                  Variables                    */
+/* ============================================= */
+
+// Breakpoints //
+$break-xs: 480px;
+$break-s: 768px;
+$break-m: 998px;
+$break-l: 1440px;
+
+$breakpoints: (
+    'xs': 480px,
+    's': 768px,
+    'm': 998px,
+    'l': 1440px,
+);
+
+// Colors //
+$theme-colors: (
+    #fff,
+    #fff,
+    #ddb2ed,
+    #7ee7fc,
+    #89d99f,
+    #40acc9,
+    #eba0a3,
+    #fca086,
+    #fff,
+    #fff,
+    #fff,
+    #81e6ce
+);
+
+$white: #fff;
+
+$primary-c: #51ddfc;
+$secondary-c: #58e1c1;
+$secondary-c-lt: ligthen($secondary-color, 10%);
+$color-shade: #888;
+$text-color: #999;
+
+$btn-def: $primary-c;
+$btn-succ: #63cc82;
+$btn-err: #e4757a;
+$btn-warn: #fd7856;
+$btn-info: #927bc1;
+
+$btn-theme-c: (
+    'default': $btn-def,
+    'success': $btn-succ,
+    'error': $btn-err,
+    'warning': $btn-warn,
+    'info': $btn-info,
+);
+
+
+// Fonts //
+$base-font: 16px;
+$primary-font-stack: "Lato", sans-serif; 
+$secondary-font: "Nunito-Sans", serif;
+
+$light: 300;
+$regular: 500;
+$bold: 700;
+
+
+// Layout //
+$max-width: 1250px;

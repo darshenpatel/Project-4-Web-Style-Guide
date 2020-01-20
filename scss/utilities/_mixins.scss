@@ -1,0 +1,37 @@
+/* ============================================= */
+/*                  Mixins                       */
+/* ============================================= */
+
+// Flexbox //
+@mixin flexbox (
+    $dis: flex,
+    $dir: 0,
+    $rap: 0,
+    $just: 0,
+)
+{
+    display: $dis;
+    flex-direction: $dir;
+    flex-wrap: $rap;
+    justify-content: $just;
+    @content; 
+}
+
+// Media Queries //
+@mixin mq($break) {
+    $value: map-get($breakpoints, $break);
+    $xs: map-get($breakpoints , 'xs');
+
+    @if $value < $xs {
+        @media (max-width: $value) {
+            @content; 
+        }
+    }
+
+    @else {
+        @media (min-wdith: $value) {
+            @content;
+        }
+    }
+}
+

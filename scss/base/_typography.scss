@@ -1,0 +1,37 @@
+/* ============================================= */
+/*                 Typography                    */
+/* ============================================= */
+
+.blockquote {
+  font: $primary-font;
+  color: $primary-c;
+  font-size: 1.6em;
+  font-weight: 200;
+  border-left: 10px solid;
+  border-left-color: $primary-c;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.link {
+  color: $secondary-c;
+  font-weight: bold;
+  &:visited {
+    color: $secondary-c;
+  }
+}
+
+.headline-primary {
+  font: $primary-font;
+  color: $primary-c;
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.headline-secondary {
+  font: $primary-font;
+  font-weight: 100;
+  font-size: 20px;
+  color: $primary-c;
+}

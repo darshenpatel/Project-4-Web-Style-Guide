@@ -1,0 +1,33 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font: $primary-font-stack;
+  font-size: $base-font;
+  font-weight: $regular;
+  color: $primary-c;
+  line-height: 1.45em;
+}
+
+a {
+  display: block;
+  width: 100%;
+  font-size: $base-font;
+  font-weight: $regular;
+  text-decoration: none;
+  color: $primary-c;
+  &:visited {
+    color: $primary-c;
+  }
+  &:hover {
+    color: $secondary-c-lt;
+  }
+  @include breakpoint {
+    display: inline;
+  }
+}
