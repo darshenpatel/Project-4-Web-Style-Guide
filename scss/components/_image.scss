@@ -2,16 +2,17 @@
 /*                   Images                      */
 /* ============================================= */
 
-.img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%; 
-  max-height: 100%;
-}
+.img {
+  &-avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%; 
+    max-height: 100%;
+  }
 
-.img-frame {
+  &-frame {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -19,14 +20,16 @@
   max-width: 100%;
   padding: 13px;
   border: 1px solid #ccc;
-  @include breakpoint {
+  @include breakpoints {
     width: 90%;
     margin-left: 70px;
+    }
   }
-}
 
-.img-logo {
+  &-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  }
+
 }

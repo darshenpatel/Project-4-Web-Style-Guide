@@ -16,7 +16,6 @@ p {
 
 a {
   display: block;
-  width: 100%;
   font-size: $base-font;
   font-weight: $regular;
   text-decoration: none;
@@ -27,7 +26,7 @@ a {
   &:hover {
     color: $secondary-c-lt;
   }
-  @include breakpoint {
+  @include flexbox {
     display: inline;
   }
 }

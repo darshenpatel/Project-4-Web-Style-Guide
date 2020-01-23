@@ -10,29 +10,24 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
-}
 
-.default {
-  @include btn;
+  &-default {
   background-color: $btn-def;
-}
+  }
 
-.error {
-  @include btn;
+  &-error {
   background-color: $btn-err;
-}
+  }
 
-.info {
-  @include btn;
+  &-info {
   background-color: $btn-info;
-}
+  }
 
-.success {
-  @include btn;
+  &-success {
   background-color: $btn-succ;
-}
+  }
 
-.warning {
-  @include btn;
+  &-warning {
   background-color: $btn-warn;
+  }
 }

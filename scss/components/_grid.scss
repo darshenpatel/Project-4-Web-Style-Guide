@@ -66,61 +66,62 @@
 // Grid-Col 3
 
 .grid-col-3 .theme-colors {
-  @include grids;
+  @include grids; 
   background-color:#ddb2ed;
-  @include breakpoint {
+  @include breakpoints {
     flex-basis: 25%;
     @include desktop-grids;
   }
 }
 
 .grid-col-4 .theme-colors {
-  @include grids;
+  @include grids; 
   background-color: #7ee7fc;
-  @include breakpoint {
+  @include breakpoints {
     flex-basis: 32%;
     @include desktop-grids;
   }
 }
 
-.grid-col-5 .theme-colors {
+.grid-col-5 .theme-colors { 
   @include grids; 
   background-color: #89d99f;
-  @include breakpoint {
+  @include breakpoints {
     flex-basis: 40%;
     @include desktop-grids;
   }
 }
 
-.grid-col-6 .theme-colors {
+.grid-col-6 .theme-colors { 
   @include grids; 
   background-color: #40acc9;
-  @include breakpoint {
+  @include breakpoints {
     flex-basis: 50%;
     @include desktop-grids;
   }
 }
 
 .grid-col-7 .theme-colors {
-  @include grids; 
+  @include grids;   
   background-color: #eba0a3;
-  @include breakpoint {
+  @include breakpoints {
     flex-basis: 60%;
     @include desktop-grids;
   }
 }
 
-.grid-col-8 .theme-colors {
-  @include grids; 
+.grid-col-8 .theme-colors { 
+  @include grids;  
   background-color: #fca086;
-  @include breakpoint {
+  @include breakpoints {
     flex-basis: 65%;
     @include desktop-grids;
   }
 }
 
 .grid-col-12 {
-  @include breakpoint {
+  @include grids; 
+  @include breakpoints {
     display: flex;
     justify-content: space-around;
   }
@@ -129,7 +130,7 @@
 .grid-col-12 .theme-colors {
   @include grids; 
   background-color: #81e6ce;
-  @include breakpoint {
+  @include breakpoints {
     @include desktop-grids;
   }
 }

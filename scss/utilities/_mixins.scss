@@ -2,6 +2,7 @@
 /*                  Mixins                       */
 /* ============================================= */
 
+
 // Flexbox //
 @mixin flexbox (
     $dis: flex,
@@ -17,7 +18,14 @@
     @content; 
 }
 
+
 // Media Queries //
+
+@mixin breakpoints {
+  @media (min-width: $break-s) { @content; }
+}
+
+
 @mixin mq($break) {
     $value: map-get($breakpoints, $break);
     $xs: map-get($breakpoints , 'xs');
@@ -35,3 +43,21 @@
     }
 }
 
+
+// Grids //
+
+@mixin grids {
+  font: $primary-font-stack;
+  padding: 13px 0 13px 15px;
+  border-radius: 5px;
+  display: block;
+  margin-left: -8px;
+  width: 105%;
+  color: #797979;
+}
+
+@mixin desktop-grids {
+  margin: 0px;
+  text-align: center;
+  padding-left: 0px;
+}

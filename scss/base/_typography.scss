@@ -3,7 +3,7 @@
 /* ============================================= */
 
 .blockquote {
-  font: $primary-font;
+  font: $primary-font-stack;
   color: $primary-c;
   font-size: 1.6em;
   font-weight: 200;
@@ -22,7 +22,7 @@
 }
 
 .headline-primary {
-  font: $primary-font;
+  font: $primary-font-stack;
   color: $primary-c;
   font-size: 2em;
   font-weight: bold;
@@ -30,7 +30,7 @@
 }
 
 .headline-secondary {
-  font: $primary-font;
+  font: $primary-font-stack;
   font-weight: 100;
   font-size: 20px;
   color: $primary-c;
