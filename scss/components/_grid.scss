@@ -2,10 +2,10 @@
 /*                Grid System                    */
 /* ============================================= */
 
-.grid {
+
 
   // .grid-row
-  &-row {
+  .row {
     display: flex;
     flex-direction: column;
     padding: 16px 0;
@@ -17,7 +17,7 @@
   }
 
   // .grid-col
-  &-col {
+  .col {
 
     // Dynamic Grid Columns 
     // Loop through each column
@@ -41,10 +41,9 @@
       }
     }
   }
-}
 
 // Targets ALL Elements w/ the Grid-Col Class
-[class^=grid-col] {
+[class^=col] {
 
   // Grid-Col + Grid-Col 
   & + & {
@@ -65,7 +64,7 @@
 
 // Grid-Col 3
 
-.grid-col-3 .theme-colors {
+.col-3 .theme-colors {
   @include grids; 
   background-color:#ddb2ed;
   @include breakpoints {
@@ -74,7 +73,7 @@
   }
 }
 
-.grid-col-4 .theme-colors {
+.col-4 .theme-colors {
   @include grids; 
   background-color: #7ee7fc;
   @include breakpoints {
@@ -83,7 +82,7 @@
   }
 }
 
-.grid-col-5 .theme-colors { 
+.col-5 .theme-colors { 
   @include grids; 
   background-color: #89d99f;
   @include breakpoints {
@@ -92,7 +91,7 @@
   }
 }
 
-.grid-col-6 .theme-colors { 
+.col-6 .theme-colors { 
   @include grids; 
   background-color: #40acc9;
   @include breakpoints {
@@ -101,7 +100,7 @@
   }
 }
 
-.grid-col-7 .theme-colors {
+.col-7 .theme-colors {
   @include grids;   
   background-color: #eba0a3;
   @include breakpoints {
@@ -110,7 +109,7 @@
   }
 }
 
-.grid-col-8 .theme-colors { 
+.col-8 .theme-colors { 
   @include grids;  
   background-color: #fca086;
   @include breakpoints {
@@ -119,7 +118,7 @@
   }
 }
 
-.grid-col-12 {
+.col-12 {
   @include grids; 
   @include breakpoints {
     display: flex;
@@ -127,7 +126,7 @@
   }
 }
 
-.grid-col-12 .theme-colors {
+.col-12 .theme-colors {
   @include grids; 
   background-color: #81e6ce;
   @include breakpoints {
