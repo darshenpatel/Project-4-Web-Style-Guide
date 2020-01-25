@@ -480,140 +480,141 @@ a:hover {
 /* ============================================= */
 /*                Grid System                    */
 /* ============================================= */
-.grid-row {
+.row {
   display: flex;
   flex-direction: column;
   padding: 16px 0;
 }
 @media (min-width: 768px) {
-  .grid-row {
+  .row {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.grid-col-1 {
+
+.col-1 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-1 {
+  .col-1 {
     margin-top: 0;
     flex-basis: 8.3333333333%;
   }
 }
-.grid-col-2 {
+.col-2 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-2 {
+  .col-2 {
     margin-top: 0;
     flex-basis: 16.6666666667%;
   }
 }
-.grid-col-3 {
+.col-3 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-3 {
+  .col-3 {
     margin-top: 0;
     flex-basis: 25%;
   }
 }
-.grid-col-4 {
+.col-4 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-4 {
+  .col-4 {
     margin-top: 0;
     flex-basis: 33.3333333333%;
   }
 }
-.grid-col-5 {
+.col-5 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-5 {
+  .col-5 {
     margin-top: 0;
     flex-basis: 41.6666666667%;
   }
 }
-.grid-col-6 {
+.col-6 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-6 {
+  .col-6 {
     margin-top: 0;
     flex-basis: 50%;
   }
 }
-.grid-col-7 {
+.col-7 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-7 {
+  .col-7 {
     margin-top: 0;
     flex-basis: 58.3333333333%;
   }
 }
-.grid-col-8 {
+.col-8 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-8 {
+  .col-8 {
     margin-top: 0;
     flex-basis: 66.6666666667%;
   }
 }
-.grid-col-9 {
+.col-9 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-9 {
+  .col-9 {
     margin-top: 0;
     flex-basis: 75%;
   }
 }
-.grid-col-10 {
+.col-10 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-10 {
+  .col-10 {
     margin-top: 0;
     flex-basis: 83.3333333333%;
   }
 }
-.grid-col-11 {
+.col-11 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-11 {
+  .col-11 {
     margin-top: 0;
     flex-basis: 91.6666666667%;
   }
 }
-.grid-col-12 {
+.col-12 {
   margin-top: 10px;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .grid-col-12 {
+  .col-12 {
     margin-top: 0;
     flex-basis: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  [class^=grid-col] + [class^=grid-col] {
+  [class^=col] + [class^=col] {
     margin-left: 10px;
   }
 }
@@ -623,7 +624,7 @@ a:hover {
   margin: 15px auto;
 }
 
-.grid-col-3 .theme-colors {
+.col-3 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -634,7 +635,7 @@ a:hover {
   background-color: #ddb2ed;
 }
 @media (min-width: 768px) {
-  .grid-col-3 .theme-colors {
+  .col-3 .theme-colors {
     flex-basis: 25%;
     margin: 0px;
     text-align: center;
@@ -642,7 +643,7 @@ a:hover {
   }
 }
 
-.grid-col-4 .theme-colors {
+.col-4 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -653,7 +654,7 @@ a:hover {
   background-color: #7ee7fc;
 }
 @media (min-width: 768px) {
-  .grid-col-4 .theme-colors {
+  .col-4 .theme-colors {
     flex-basis: 32%;
     margin: 0px;
     text-align: center;
@@ -661,7 +662,7 @@ a:hover {
   }
 }
 
-.grid-col-5 .theme-colors {
+.col-5 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -672,7 +673,7 @@ a:hover {
   background-color: #89d99f;
 }
 @media (min-width: 768px) {
-  .grid-col-5 .theme-colors {
+  .col-5 .theme-colors {
     flex-basis: 40%;
     margin: 0px;
     text-align: center;
@@ -680,7 +681,7 @@ a:hover {
   }
 }
 
-.grid-col-6 .theme-colors {
+.col-6 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -691,7 +692,7 @@ a:hover {
   background-color: #40acc9;
 }
 @media (min-width: 768px) {
-  .grid-col-6 .theme-colors {
+  .col-6 .theme-colors {
     flex-basis: 50%;
     margin: 0px;
     text-align: center;
@@ -699,7 +700,7 @@ a:hover {
   }
 }
 
-.grid-col-7 .theme-colors {
+.col-7 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -710,7 +711,7 @@ a:hover {
   background-color: #eba0a3;
 }
 @media (min-width: 768px) {
-  .grid-col-7 .theme-colors {
+  .col-7 .theme-colors {
     flex-basis: 60%;
     margin: 0px;
     text-align: center;
@@ -718,7 +719,7 @@ a:hover {
   }
 }
 
-.grid-col-8 .theme-colors {
+.col-8 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -729,7 +730,7 @@ a:hover {
   background-color: #fca086;
 }
 @media (min-width: 768px) {
-  .grid-col-8 .theme-colors {
+  .col-8 .theme-colors {
     flex-basis: 65%;
     margin: 0px;
     text-align: center;
@@ -737,7 +738,7 @@ a:hover {
   }
 }
 
-.grid-col-12 {
+.col-12 {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -747,13 +748,13 @@ a:hover {
   color: #797979;
 }
 @media (min-width: 768px) {
-  .grid-col-12 {
+  .col-12 {
     display: flex;
     justify-content: space-around;
   }
 }
 
-.grid-col-12 .theme-colors {
+.col-12 .theme-colors {
   font: "Lato", sans-serif;
   padding: 13px 0 13px 15px;
   border-radius: 5px;
@@ -764,7 +765,7 @@ a:hover {
   background-color: #81e6ce;
 }
 @media (min-width: 768px) {
-  .grid-col-12 .theme-colors {
+  .col-12 .theme-colors {
     margin: 0px;
     text-align: center;
     padding-left: 0px;
@@ -815,7 +816,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-.nav-item {
+.nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
@@ -823,15 +824,15 @@ a:hover {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-.nav-item:visited {
+.nav-link:visited {
   color: #51ddfc;
 }
-.nav-item:hover {
+.nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
 }
 @media (min-width: 768px) {
-  .nav-item {
+  .nav-link {
     display: inline;
     margin: 0 5px;
     padding: 10px 10px;
