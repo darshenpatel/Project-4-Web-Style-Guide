@@ -6,9 +6,9 @@
 // Flexbox //
 @mixin flexbox (
     $dis: flex,
-    $dir: 0,
-    $rap: 0,
-    $just: 0,
+    $dir: null,
+    $rap: null,
+    $just: null,
 )
 {
     display: $dis;
