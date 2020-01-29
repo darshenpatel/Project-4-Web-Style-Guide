@@ -13,21 +13,51 @@
 
   &-default {
   background-color: $btn-def;
+    &:hover {
+    background-color: $secondary-c-lt;
+    }
+    &:visited {
+    color: $color-shade;
+    }
   }
 
   &-error {
   background-color: $btn-err;
+    &:hover {
+    background-color: $secondary-c-lt;
+    }
+    &:visited {
+    color: $color-shade;
+    }
   }
 
   &-info {
   background-color: $btn-info;
+    &:hover {
+    background-color: $secondary-c-lt;
+    }
+    &:visited {
+    color: $color-shade;
+    }  
   }
 
   &-success {
   background-color: $btn-succ;
+    &:hover {
+    background-color: $secondary-c-lt;
+    }
+    &:visited {
+    color: $color-shade;
+    }
   }
 
   &-warning {
   background-color: $btn-warn;
+    &:hover {
+    background-color: $secondary-c-lt;
+    }
+    &:visited {
+    color: $color-shade;
+    }
   }
 }
