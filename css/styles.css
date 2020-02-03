@@ -414,31 +414,46 @@ a {
   background-color: #51ddfc;
 }
 .btn.default:hover {
-  background-color: #83e7fd;
+  -moz-transition: background-color #83e7fd 1s 0.5s, #51ddfc 2s;
+  -o-transition: background-color #83e7fd 1s 0.5s, #51ddfc 2s;
+  -webkit-transition: background-color #83e7fd 1s 0.5s, #51ddfc 2s;
+  transition: background-color #83e7fd 1s 0.5s, #51ddfc 2s;
 }
 .btn.success {
   background-color: #63cc82;
 }
 .btn.success:hover {
-  background-color: #89d9a1;
+  -moz-transition: background-color #89d9a1 1s 0.5s, #63cc82 2s;
+  -o-transition: background-color #89d9a1 1s 0.5s, #63cc82 2s;
+  -webkit-transition: background-color #89d9a1 1s 0.5s, #63cc82 2s;
+  transition: background-color #89d9a1 1s 0.5s, #63cc82 2s;
 }
 .btn.error {
   background-color: #e4757a;
 }
 .btn.error:hover {
-  background-color: #eca0a3;
+  -moz-transition: background-color #eca0a3 1s 0.5s, #e4757a 2s;
+  -o-transition: background-color #eca0a3 1s 0.5s, #e4757a 2s;
+  -webkit-transition: background-color #eca0a3 1s 0.5s, #e4757a 2s;
+  transition: background-color #eca0a3 1s 0.5s, #e4757a 2s;
 }
 .btn.warning {
   background-color: #fd7856;
 }
 .btn.warning:hover {
-  background-color: #fea088;
+  -moz-transition: background-color #fea088 1s 0.5s, #fd7856 2s;
+  -o-transition: background-color #fea088 1s 0.5s, #fd7856 2s;
+  -webkit-transition: background-color #fea088 1s 0.5s, #fd7856 2s;
+  transition: background-color #fea088 1s 0.5s, #fd7856 2s;
 }
 .btn.info {
   background-color: #927bc1;
 }
 .btn.info:hover {
-  background-color: #af9ed1;
+  -moz-transition: background-color #af9ed1 1s 0.5s, #927bc1 2s;
+  -o-transition: background-color #af9ed1 1s 0.5s, #927bc1 2s;
+  -webkit-transition: background-color #af9ed1 1s 0.5s, #927bc1 2s;
+  transition: background-color #af9ed1 1s 0.5s, #927bc1 2s;
 }
 @media (min-width: 768px) {
   .btn {
@@ -683,6 +698,9 @@ a {
   padding: 10px 0;
   display: block;
   width: 100%;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 @media (min-width: 768px) {

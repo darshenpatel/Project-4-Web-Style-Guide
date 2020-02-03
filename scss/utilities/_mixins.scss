@@ -61,3 +61,13 @@
   text-align: center;
   padding-left: 0px;
 }
+
+
+// Transitions //
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
