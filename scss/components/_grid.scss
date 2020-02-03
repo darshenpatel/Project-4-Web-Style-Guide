@@ -2,134 +2,114 @@
 /*                Grid System                    */
 /* ============================================= */
 
-
-
-  // .grid-row
-  .row {
-    display: flex;
-    flex-direction: column;
-    padding: 16px 0;
-
-    @media (min-width: $break-s) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-
-  // .grid-col
-  .col {
-
-    // Dynamic Grid Columns 
-    // Loop through each column
-    @for $i from 1 through 12 {
-
-      // Concatenation 
-      &-#{$i} {
-
-        // Base Styles for ALL Grid Columns
-        margin-top: 10px;
-        flex-basis: 100%;
-
-      @media (min-width: $break-s) {
-        
-        // Base Styles for ALL Grid Columns
-        margin-top: 0; 
-
-        // Column As Width % 
-        flex-basis: #{$i / 12 * 100 + "%"};
-       }  
-      }
-    }
-  }
-
-// Targets ALL Elements w/ the Grid-Col Class
-[class^=col] {
-
-  // Grid-Col + Grid-Col 
-  & + & {
-
-    
-    @media (min-width: $break-s) {
-      
-      // Grid Gutter
-      margin-left: 10px;
-    }
-  }
-}
-
 .container {
   width: 90%;
-  margin: 15px auto; 
+  margin: 15px auto;
+  padding: 0 10px;
+  @include breakpoints {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
 }
 
-// Grid-Col 3
-
-.col-3 .theme-colors {
-  @include grids; 
-  background-color:#ddb2ed;
+.centered {
   @include breakpoints {
-    flex-basis: 25%;
-    @include desktop-grids;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.col-4 .theme-colors {
-  @include grids; 
-  background-color: #7ee7fc;
-  @include breakpoints {
-    flex-basis: 32%;
-    @include desktop-grids;
-  }
+.row {
+   padding: 1em 20px; 
+   @include flexbox (flex, column); 
+   @include breakpoints {
+     @include flexbox (flex, row); 
+   }
 }
 
-.col-5 .theme-colors { 
-  @include grids; 
-  background-color: #89d99f;
-  @include breakpoints {
-    flex-basis: 40%;
-    @include desktop-grids;
-  }
-}
-
-.col-6 .theme-colors { 
-  @include grids; 
-  background-color: #40acc9;
-  @include breakpoints {
-    flex-basis: 50%;
-    @include desktop-grids;
-  }
-}
-
-.col-7 .theme-colors {
-  @include grids;   
-  background-color: #eba0a3;
-  @include breakpoints {
-    flex-basis: 60%;
-    @include desktop-grids;
-  }
-}
-
-.col-8 .theme-colors { 
-  @include grids;  
-  background-color: #fca086;
-  @include breakpoints {
-    flex-basis: 65%;
-    @include desktop-grids;
-  }
-}
-
-.col-12 {
-  @include grids; 
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
   @include breakpoints {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
   }
 }
 
-.col-12 .theme-colors {
-  @include grids; 
-  background-color: #81e6ce;
+[class^=col] + [class^=col] {
   @include breakpoints {
-    @include desktop-grids;
+    margin-left: 10px;
   }
+}
+
+.col {
+  @include breakpoints {
+    &-1 {
+      flex-basis: 8.33%; 
+    }
+
+    &-2 {
+      flex-basis: 16.67%;
+    }
+
+    &-3 {
+      flex-basis: 25.00%;
+    }
+
+    &-4 {
+      flex-basis: 33.33%;
+    }
+
+    &-5 {
+      flex-basis: 41.67%;
+    }
+
+    &-6 {
+      flex-basis: 50.00%;
+    }
+
+    &-7 {
+      flex-basis: 58.33%;
+    }
+
+    &-8 {
+      flex-basis: 66.67%;
+    }
+
+    &-9 {
+      flex-basis: 75.00%;
+    }
+
+    &-10 {
+      flex-basis: 83.33%;
+    }
+
+    &-11 {
+      flex-basis: 91.67%;
+    }
+
+    &-12 {
+      flex-basis: 100.00%;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .col {
+    &-#{$i}.theme {
+      background-color: nth($theme-colors, $i);
+    }
+  }
+}
+
+.card {
+  flex-basis: 100%;
 }

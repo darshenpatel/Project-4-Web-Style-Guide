@@ -14,23 +14,23 @@
   }
 
   &-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 13px;
-  border: 1px solid #ccc;
-  @include breakpoints {
-    width: 90%;
-    margin-left: 70px;
-    }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 13px;
+    border: 1px solid $border-shade;
   }
 
   &-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  @include breakpoints {
+    margin-left: initial;
+    margin-right: initial;
+  }
   }
 
 }

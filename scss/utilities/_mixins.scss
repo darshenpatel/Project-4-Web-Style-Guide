@@ -15,7 +15,7 @@
     flex-direction: $dir;
     flex-wrap: $rap;
     justify-content: $just;
-    @content; 
+    @content;
 }
 
 
@@ -32,12 +32,12 @@
 
     @if $value < $xs {
         @media (max-width: $value) {
-            @content; 
+            @content;
         }
     }
 
     @else {
-        @media (min-wdith: $value) {
+        @media (min-width: $value) {
             @content;
         }
     }

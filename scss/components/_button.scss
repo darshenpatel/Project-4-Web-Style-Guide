@@ -5,59 +5,28 @@
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #fff;
+  color: $white;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
 
-  &-default {
-  background-color: $btn-def;
-    &:hover {
-    background-color: $secondary-c-lt;
-    }
-    &:visited {
-    color: $color-shade;
-    }
-  }
-
-  &-error {
-  background-color: $btn-err;
-    &:hover {
-    background-color: $secondary-c-lt;
-    }
-    &:visited {
-    color: $color-shade;
+  @each $key, $color in $btn-theme-c {
+    &.#{$key} {
+      background-color: $color;
+      &:hover {
+        background-color: lighten($color, 10%);
+      } 
     }
   }
 
-  &-info {
-  background-color: $btn-info;
-    &:hover {
-    background-color: $secondary-c-lt;
-    }
-    &:visited {
-    color: $color-shade;
-    }  
+  @include breakpoints {
+    padding: 10px 30px;
   }
+}
 
-  &-success {
-  background-color: $btn-succ;
-    &:hover {
-    background-color: $secondary-c-lt;
-    }
-    &:visited {
-    color: $color-shade;
-    }
-  }
-
-  &-warning {
-  background-color: $btn-warn;
-    &:hover {
-    background-color: $secondary-c-lt;
-    }
-    &:visited {
-    color: $color-shade;
-    }
+.btn + .btn {
+  @include breakpoints {
+    margin-left: 10px;
   }
 }

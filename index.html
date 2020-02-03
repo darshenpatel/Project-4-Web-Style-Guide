@@ -8,60 +8,6 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<!--
-    List of classes used
-    
-    Grid:
-    .container
-    .row
-    .col-1
-    .col-2
-    .col-3
-    .col-4
-    .col-5
-    .col-6
-    .col-7
-    .col-8
-    .col-9
-    .col-10
-    .col-11
-    .col-12
-    .card
-    .centered
-    .theme-colors
-    (.col-1, .col-2, .col-10, and .col-11 are not used here in the HTML but would be good to include in the Sass)
-    
-    Typography:
-    .container
-    .link
-    .blockquote
-    .headline-primary
-    .headline-secondary
-    
-    Image:
-    .img-logo
-    .img-frame
-    .img-avatar
-
-    Navigation:
-    .nav
-    .nav-link
-
-    Buttons:
-    .btn-default
-    .btn-success
-    .btn-error
-    .btn-warning
-    .btn-info
-    .theme-colors
-
-    Forms:
-    .form
-    .form-hidden
-    .form-input
-
-  -->
-
 <body class="container">
   <header class="row">
     <div class="col-3">
@@ -112,12 +58,12 @@
     <div class="col-4">
       <form class="form">
         <legend id="forms" class="headline-secondary">Form Elements</legend>
-        <img class="img img-avatar" src="images/avatar.png" alt="Avatar">
-        <label class="form-hidden" for="username">Username:</label>
-        <input class="form-input" type="text" id="username" placeholder="Username">
-        <label class="form-hidden" for="password">Password:</label>
-        <input class="form-input" type="password" id="password" placeholder="Password">
-        <button class="btn-default" type="submit" value="Login">Login</button>
+        <img class="img-avatar" src="images/avatar.png" alt="Avatar">
+        <label class="hidden" for="username">Username:</label>
+        <input class="input" type="text" id="username" placeholder="Username">
+        <label class="hidden" for="password">Password:</label>
+        <input class="input" type="password" id="password" placeholder="Password">
+        <button class="btn default" type="submit" value="Login">Login</button>
       </form>
     </div>
   </div>
@@ -137,11 +83,11 @@
 
   <div class="row">
     <div class="col-12">
-      <button class="btn-default">default</button>
-      <button class="btn-success">success</button>
-      <button class="btn-error">error</button>
-      <button class="btn-warning">warning</button>
-      <button class="btn-info">info</button>
+      <button class="btn default">default</button>
+      <button class="btn success">success</button>
+      <button class="btn error">error</button>
+      <button class="btn warning">warning</button>
+      <button class="btn info">info</button>
     </div>
   </div>
 

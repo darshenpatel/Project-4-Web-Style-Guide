@@ -1,37 +1,60 @@
 /* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  font-family: $primary-font-stack;
+  color: $color-shade;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: $base-font;
+  font-weight: $regular;
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
 /*                 Typography                    */
 /* ============================================= */
 
-.blockquote {
-  font: $primary-font-stack;
-  color: $primary-c;
-  font-size: 1.6em;
-  font-weight: 200;
-  border-left: 10px solid;
-  border-left-color: $primary-c;
-  border-radius: 5px;
-  padding-left: 15px;
-}
-
-.link {
-  color: $secondary-c;
-  font-weight: bold;
-  &:visited {
-    color: $secondary-c;
-  }
-}
-
 .headline-primary {
-  font: $primary-font-stack;
-  color: $primary-c;
-  font-size: 2em;
-  font-weight: bold;
+  color: $secondary-c;
+  font-weight: $bold;
+  // font-size: 2em;
   margin-left: 20px;
 }
 
 .headline-secondary {
-  font: $primary-font-stack;
-  font-weight: 100;
-  font-size: 20px;
-  color: $primary-c;
+  font-weight: $light;
+  color: $color-shade;
+  // font-size: 20px;
 }
+
+.link {
+  color: $primary-c;
+  font-weight: $bold;
+  // &:visited {
+  //   color: $secondary-c;
+  // }
+}
+
+.blockquote {
+  // color: $primary-c;
+  font-size: 1.5em;
+  font-weight: $light;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $secondary-c; 
+  border-radius: 5px;
+}
+
+
+
+
+
